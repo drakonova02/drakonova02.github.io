@@ -1,0 +1,33 @@
+.header {
+    position: fixed;
+    z-index: 10;
+    display: flex;
+}
+
+.header .logo {
+    position: relative;
+    width: 65px;
+    height: 65px;
+    background-color: #000;
+}
+
+.header .logo svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    width: 75%;
+    fill: #F0B531;
+    transition: fill .3s;
+}
+
+.header .logo svg:hover {
+    fill: #fff;
+}
+
+@media screen and (min-width: 990px) {
+    .header .logo {
+        width: 90px;
+        height: 90px;
+    }
+}
